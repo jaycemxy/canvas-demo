@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
-  <link rel="stylesheet" href="./style.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no,
+<link rel="stylesheet" href="./style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no,
    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>我的画板</title>
-  <canvas id="xxx" width=300 height=300></canvas>
-  <div id=actions class="actions">
-    <svg id=pen class="active icon">
-        <use xlink:href="#icon-pen"></use>
-    </svg>
-    <svg id=eraser class="icon">
-        <use xlink:href="#icon-eraser"></use>
-    </svg>
-    <svg id=clear class="icon">
+<title>我的画板</title>
+
+<body>
+    <canvas id="xxx" width=300 height=300></canvas>
+    <div id=actions class="actions">
+        <svg id=pen class="active icon">
+            <use xlink:href="#icon-pen"></use>
+        </svg>
+        <svg id=eraser class="icon">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+        <svg id=clear class="icon">
             <use xlink:href="#icon-clear"></use>
         </svg>
-  </div>
-  <ol class="colors">
-      <li id=red class="red"></li>
-      <li id=green class="green"></li>
-      <li id=blue class="blue"></li>
-  </ol>
-  <ol class="sizes">
-      <li id="thin" class=thin></li>
-      <li id="thick" class=thick></li>
-  </ol>
-  <script src="./main.js"></script>
-  <script src="//at.alicdn.com/t/font_595903_83tximgnmu3ow29.js"></script>
+        <svg id=download class="icon">
+            <use xlink:href="#icon-download"></use>
+        </svg>
+    </div>
+    <ol class="colors">
+        <li id=red class="red"></li>
+        <li id=green class="green"></li>
+        <li id=blue class="blue"></li>
+    </ol>
+    <ol class="sizes">
+        <li id="thin" class=thin></li>
+        <li id="thick" class=thick></li>
+    </ol>
+</body>
+<script src="./main.js"></script>
+<script src="//at.alicdn.com/t/font_595903_kj8rhgc9gohzd7vi.js"></script>
+
 </html>
