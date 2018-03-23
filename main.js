@@ -12,7 +12,7 @@ pen.onclick = function () {
   pen.classList.add('active')
   eraser.classList.remove('active')
 }
-eraserEnabled.onclick = function () {
+eraser.onclick = function () {
   eraserEnabled = true
   eraser.classList.add('active')
   pen.classList.remove('active')
@@ -22,9 +22,9 @@ clear.onclick = function () {
 }
 
 download.onclick = function () {
-  var url = yyy.toDatdUrl("image/png")
-  var a = document.createElement('a')
-  documbody.appendChild(a)
+  var url = yyy.toDataURL("image/png") // https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLCanvasElement/toDataURL
+  var a = document.createElement('a') // 下面有 bug，暂时不知道咋解决
+  document.body.appendChild(a)
   a.href = url
   a.dowload = '我的画儿'
   a.target = '_blank'

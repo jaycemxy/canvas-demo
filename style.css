@@ -28,7 +28,7 @@ body {
   overflow: hidden;
 }
 
-actions {
+.actions {
   position: fixed;
   top: 0;
   left: 0;
