@@ -39,7 +39,7 @@ body {
   width: 1.5em;
   height: 1.5em;
   transition: all 0.3s;
-  margin: 0 10px;
+  margin: 0 30px;
 }
 
 .actions svg.active {
@@ -50,7 +50,7 @@ body {
 .colors {
   position: fixed;
   top: 60px;
-  left: 28px;
+  left: 51px;
 }
 
 .colors>li {
@@ -61,16 +61,16 @@ body {
   margin: 10px 0;
 }
 
-.colors>li.red {
-  background: red;
+.colors>li.pink {
+  background: pink;
 }
 
-.colors>li.green {
-  background: green;
+.colors>li.orange {
+  background: orange;
 }
 
-.colors>li.blue {
-  background: blue;
+.colors>li.purple {
+  background: purple;
 }
 
 .colors>li.active {
@@ -81,22 +81,16 @@ body {
 
 .sizes {
   position: fixed;
-  right: 20px;
-  top: 10px;
+  left: 132px;
+  top: 55px;
 }
 
 .sizes>li {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
-.sizes>.thin {
-  height: 0;
-  width: 20px;
-  border-top: 3px solid black;
-}
-
-.sizes>.thick {
-  height: 0;
-  width: 20px;
-  border-top: 6px solid black;
+.sizes>li.active{
+  transform: scale(1.2);
+  transition: all 0.3s;
+  color: #ff4a26;
 }

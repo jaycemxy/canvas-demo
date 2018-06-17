@@ -7,15 +7,23 @@ listenToUser(yyy)
 
 
 var eraserEnabled = false
+palette.onclick = function() {
+  eraserEnabled = false
+  palette.classList.add('active')
+  pen.classList.remove('active')
+  eraser.classList.remove('active')
+}
 pen.onclick = function () {
   eraserEnabled = false
   pen.classList.add('active')
   eraser.classList.remove('active')
+  palette.classList.remove('active')
 }
 eraser.onclick = function () {
   eraserEnabled = true
   eraser.classList.add('active')
   pen.classList.remove('active')
+  palette.classList.remove('active')
 }
 clear.onclick = function () {
   context.clearRect(0, 0, yyy.width, yyy.height);
@@ -31,34 +39,47 @@ download.onclick = function () {
   a.click()
 }
 
-red.onclick = function () {
-  context.fillStyle = 'red'
-  context.strokeStyle = 'red'
-  red.classList.add('active')
-  green.classList.remove('active')
-  blue.classList.remove('active')
+pink.onclick = function () {
+  context.fillStyle = 'pink'
+  context.strokeStyle = 'pink'
+  pink.classList.add('active')
+  orange.classList.remove('active')
+  purple.classList.remove('active')
 }
-green.onclick = function () {
-  context.fillStyle = 'green'
-  context.strokeStyle = 'green'
-  red.classList.remove('active')
-  green.classList.add('active')
-  blue.classList.remove('active')
+orange.onclick = function () {
+  context.fillStyle = 'orange'
+  context.strokeStyle = 'orange'
+  pink.classList.remove('active')
+  orange.classList.add('active')
+  purple.classList.remove('active')
 }
-blue.onclick = function () {
-  context.fillStyle = 'blue'
-  context.strokeStyle = 'blue'
-  red.classList.remove('active')
-  green.classList.remove('active')
-  blue.classList.add('active')
+purple.onclick = function () {
+  context.fillStyle = 'purple'
+  context.strokeStyle = 'purple'
+  pink.classList.remove('active')
+  orange.classList.remove('active')
+  purple.classList.add('active')
 }
 
 thin.onclick = function () {
+  lineWidth = 3
+  thin.classList.add('active')
+  normal.classList.remove('active')
+  thick.classList.remove('active')
+}
+
+normal.onclick = function () {
   lineWidth = 5
+  normal.classList.add('active')
+  thin.classList.remove('active')
+  thick.classList.remove('active')
 }
 
 thick.onclick = function () {
   lineWidth = 10
+  thick.classList.add('active')
+  thin.classList.remove('active')
+  normal.classList.remove('active')
 }
 
 

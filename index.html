@@ -9,6 +9,9 @@
 <body>
     <canvas id="xxx" width=300 height=300></canvas>
     <div id=actions class="actions">
+        <svg id=palette class="icon">
+            <use xlink:href="#icon-palette"></use>
+        </svg>
         <svg id=pen class="active icon">
             <use xlink:href="#icon-pen"></use>
         </svg>
@@ -23,16 +26,17 @@
         </svg>
     </div>
     <ol class="colors">
-        <li id=red class="red"></li>
-        <li id=green class="green"></li>
-        <li id=blue class="blue"></li>
+        <li id=pink class="pink"></li>
+        <li id=orange class="orange"></li>
+        <li id=purple class="purple"></li>
     </ol>
     <ol class="sizes">
-        <li id="thin" class=thin></li>
-        <li id="thick" class=thick></li>
+        <li id="thin" class=thin>3px</li>
+        <li id="normal" class="normal active">5px</li>
+        <li id="thick" class=thick>10px</li>
     </ol>
 </body>
 <script src="./main.js"></script>
-<script src="//at.alicdn.com/t/font_595903_kj8rhgc9gohzd7vi.js"></script>
+<script src="//at.alicdn.com/t/font_595903_62ohg4g4iir.js"></script>
 
 </html>
